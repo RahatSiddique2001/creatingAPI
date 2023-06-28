@@ -7,3 +7,5 @@ class Breed(models.Model):
     size = models.PositiveIntegerField()
     friendliness = models.CharField(max_length=22)
 
+    def __str__(self) -> str:
+        return self.name
